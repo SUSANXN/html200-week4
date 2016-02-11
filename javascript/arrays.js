@@ -157,12 +157,12 @@ var selectedImage = imageListA.splice(imageIndex, 1);
 function update_shopping_cart()
 {
   //make a shortcut to the div id="shopping_cart_div");
-  var cart = document.getElementById("shopping_cart_div'); 
+  var cart = document.getElementById("shopping_cart_div"); 
                           var output = ""; 
                           for(var i=0; i <= purchasedImages.length -1; i++ ) 
   //use a -1 after imagelist.length so the condition is always one less (to match the index number)
   {
-    output += '<img src="' + purchasedImags[i] + '"width="70" height="50" />'; 
+    output += '<img src="' + purchasedImages[i] + '"width="70" height="50" />'; 
     }
     cart.innerHTML = output; 
 }
@@ -184,9 +184,9 @@ function update_shopping_cart()
   //evt.target.setAttribute("src", "images/drawing/thumbs/artwork_5.jpg");
 
   
- var imageIndex = imageListA.indexOf("images/drawing/thumbs/artwork_5.jpg");
- console.log(imageIndex);
- }
+ //var imageIndex = imageListA.indexOf("images/drawing/thumbs/artwork_5.jpg");
+ //console.log(imageIndex);
+ //}
 
 
 
